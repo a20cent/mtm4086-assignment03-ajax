@@ -12,7 +12,7 @@ $('#save').click(function () {
             // setTimeout added to show loading
             console.log(data);
             setTimeout(function () {
-                $('#loading').html('<img src="' + data.avatar_url + '"><br>' + data.login + '<br>' + data.html_url + '<br>' + data.public_repos + '<br>' + data.created_at );
+                $('#loading').html('<img src="' + data.avatar_url + '"><br>' + '<p>' + "Username: " + data.login + '<br>' + "URL: " + data.html_url + '<br>' + "Repos: " + data.public_repos + '<br>' + "Created: " + data.created_at + '</p>');
             }, 2000);
         }
     });
